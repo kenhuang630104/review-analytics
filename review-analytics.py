@@ -8,3 +8,7 @@ with open('reviews.txt', 'r') as f:
 		if count % 1000 == 0:
 		    print(len(data))
 
+sum_len = 0
+for d in data:
+	sum_len += len(d)
+print('the average string lengh is', sum_len/len(data), 'charactor')
